@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.main-carousel > .carousel > .carousel-control,.main-carousel > .carousel > .carousel-indicators,.usedbookslider > .carousel > .carousel-control{
+    display: none!important;
+}
+
+
+.cursorPointer{
+    cursor: pointer;
+}

@@ -1,0 +1,72 @@
+
+
+slide img{
+    
+    height: 200px;
+    width: 300px;
+    border-radius: 15px 15px 0px 0px;
+}
+.used-books{
+
+    margin-top: 50px;
+}
+.used-books h1{
+    font-size: 30px;
+    margin-bottom: 5px;
+ 
+}
+.used-books .u-box p{
+    color: #999;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;  
+    margin-left: 2px;
+    
+}
+.u-box{
+    padding: 0;
+}
+.viewAll a{
+    float: right;
+    margin-top:7px;
+    cursor: pointer;
+    color: #f9110a;
+}
+.row{
+    margin-bottom: 20px;
+}
+.price{
+    color: #f9110a;
+    font-weight: bold;
+}
+.books-next{
+    position: absolute;
+    margin-top: 150%;
+    cursor: pointer;
+    
+  
+}
+.books-next:hover{
+border: solid 1px black;
+padding: 5px;
+
+}
+.left-books{
+    
+    
+    right: 20px;
+}
+.right-books{
+    
+    
+    left: 20px;
+}
+.used-books .card{
+    border: none;
+}
+.used-books .card-body{
+    border: 1px solid rgba(0,0,0,.125);
+}
+.viewAll{
+    padding-top: 32px;
+}

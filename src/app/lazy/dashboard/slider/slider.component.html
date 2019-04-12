@@ -1,0 +1,216 @@
+<carousel class="main-carousel">
+    <div class="search-bar align-items-center">
+        
+        <form class="search-form" action="#" method="post" novalidate="novalidate">
+              
+            <div class="row search-box">
+                <div class="search-book-content">
+                      <h3 class="search-books-heading"><b>Find Any Book You Want.</b></h3>
+                  <p>Hundreds of , Thousands of books just one step away from you.</p>
+                </div>
+                  
+                <div class="col-lg-12" style="padding:0;">
+                      <div class="row">
+  
+                        <div class="col-lg-9 s-box book-name">
+                            <input id="bookName" type="text" class=" form-control search-slt" placeholder="Book Name">
+                        </div>
+                        <div class="col-lg-3 s-box">
+                            <button type="button" class="btn btn-lg btn-danger wrn-btn search-btn" style="width: 100%;">
+                              <img src="../../../../assets/images/search.png" class="">
+                              Search</button>
+                        </div>
+                      </div>
+                      <div class="row">
+                           <div class="col-lg-3  s-box">
+                                  <select class="form-control search-slt" >
+                                      <option>Select City</option>
+                                      <option>Karachi</option>
+                                      <option>Lahore</option>
+                                      <option>Islamabad</option>
+                                      <option>Faisalabad </option>
+                                      <option>Multan</option>
+                                      <option>Rawalpindi </option>
+                                  </select>
+                           </div>
+                              
+                              <div class="col-lg-7 s-box">
+                                  <input type="text" class="form-control search-slt" placeholder="Enter Author">
+                              </div>
+                              <div class="col-lg-2 s-box">
+                                      <button type="button" class="btn btn-lg btn-danger wrn-btn filter-btn" (click)="lgModal.show()" style="width: 100%;">
+                                          <img src="../../../../assets/images/filter.png" class="">More Filter
+                                      
+                                      </button>
+                                  </div>
+                              
+                       
+                       </div>
+  
+                       <div class="row">
+                          
+  
+  
+                       </div>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+      <div class="slide-tint">
+          <slide>
+              <img src="../../../../assets/images/1.jpg" alt="first slide" style=" width: 100%;">
+          </slide>
+          <slide>
+              <img src="../../../../assets/images/2.jpg" alt="second slide" style=" width: 100%;">
+          </slide>
+          <slide>
+              <img src="../../../../assets/images/3.jpg" alt="third slide" style=" width: 100%;">
+          </slide>
+      </div>
+  </carousel>
+  
+  
+  
+  
+  
+  
+  <!-- search filters start -->
+  
+  <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1"
+       role="dialog" aria-labelledby="dialog-sizes-name1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 id="dialog-sizes-name1" class="modal-title pull-left">Search Filters</h4>
+          <button type="button" class="close pull-right" (click)="lgModal.hide()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+              <div class="form-group col-lg-12 formmodal" style="padding:0;">
+                  <div class="row search-book">
+                          <div class="col-lg-2">                    
+                              <label>Search</label>
+                          </div>
+                          <div class="col-lg-10"> 
+                                  <label class="radio-inline search-book-radio" for="radios-0">
+                                      <input type="radio" name="radios" id="radios-0" value="allbooks" checked="checked">
+                                      All books
+                                  </label> 
+                                  <label class="radio-inline search-book-radio" for="radios-1">
+                                      <input type="radio" name="radios" id="radios-1" value="limitedbooks">
+                                      limited preview and full view
+                                  </label> 
+                                  <label class="radio-inline search-book-radio" for="radios-2">
+                                      <input type="radio" name="radios" id="radios-2" value="fullviewonly">
+                                      full view only
+                                  </label> 
+                                  
+                          </div>
+                  </div>
+                  <div class="row content">
+                          <div class="col-lg-2">                    
+                              <label>Content</label>
+                          </div>
+                          <div class="col-lg-10"> 
+                                  <label class="radio-inline content-radio" for="radios-0">
+                                      <input type="radio" name="radios" id="radios-0" value="allbooks" checked="checked">
+                                      All Content
+                                  </label> 
+                                  <label class="radio-inline content-radio" for="radios-1">
+                                      <input type="radio" name="radios" id="radios-1" value="limitedbooks">
+                                       Books 
+                                   </label> 
+                                  <label class="radio-inline content-radio" for="radios-2">
+                                      <input type="radio" name="radios" id="radios-2" value="fullviewonly">
+                                     Newspapers
+                                  </label> 
+                                  
+                          </div>
+                  </div>
+  
+  
+                  <div class="row language">
+                          <div class="col-lg-2">                    
+                              <label>Language</label>
+                          </div>
+                          <div class="col-lg-5"> 
+                                  
+                                  <select class="form-control search-slt" >
+                                          <option>Select language</option>
+                                          <option>English</option>
+                                          <option>Urdu</option>
+                                          <option>French</option>
+                                          <option>Arabic </option>
+                                          <option>Sindhi</option>
+                                          
+                                      </select>
+                                      
+                                  
+                          </div>
+                  </div>
+                  <div class="row title">
+                          <div class="col-lg-2">                    
+                              <label>Title</label>
+                          </div>
+                          <div class="col-lg-5"> 
+                                  <input id="title" type="text" class="form-control search-slt" placeholder="Eg: Books and culture">
+  
+                                      
+                                  
+                          </div>
+                  </div>
+                  <div class="row author">
+                      <div class="col-lg-2">                    
+                          <label>Author</label>
+                      </div>
+                      <div class="col-lg-5"> 
+                              <input id="author" type="text" class="form-control search-slt" placeholder="Eg: Hamilton mabie">
+  
+                                  
+                              
+                      </div>
+              </div>
+              <div class="row publisher">
+                  <div class="col-lg-2">                    
+                      <label>Publisher</label>
+                  </div>
+                  <div class="col-lg-5"> 
+                          <input id="publisher" type="text" class="form-control search-slt" placeholder="Eg: O'Relly">
+  
+                              
+                          
+                  </div>
+          </div>
+          <div class="row subject">
+              <div class="col-lg-2">                    
+                  <label>Subject</label>
+              </div>
+              <div class="col-lg-5"> 
+                      <input id="subject" type="text" class="form-control search-slt" placeholder="Eg: History">
+  
+                          
+                      
+              </div>
+      </div>
+  
+          <div class="search-button">
+              <button type="button" class="btn btn-lg btn-danger wrn-btn filter-btn">
+              Search     
+              </button> 
+  
+          </div>
+  
+  
+  
+  
+              </div>
+  
+  
+  
+  
+        </div>
+      </div>
+    </div>
+  </div>

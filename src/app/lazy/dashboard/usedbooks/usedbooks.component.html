@@ -1,0 +1,336 @@
+<div class="container-fluid used-books">
+
+    <div class="container" style="margin-top: 50px;">
+        <div class="col-lg-12 ">
+            <div class="row">     
+              
+              <div class="col-lg-10 u-box">
+          
+                    <h1 class="used-heading">Trending Books</h1>
+                    <p>Top Selling Books.</p>
+            </div>
+          
+                <div class="viewAll col-lg-2 u-box ">
+                  <a  (click)="navigateTolistingPage('trend')">View All Trending Books</a>
+                </div>
+          
+              </div>
+          
+          </div>
+    </div>
+    
+    
+    
+    <div class="col-lg-12">
+        <div class="row">
+    <div class="col-lg-1">
+        <img (click)="curoselprev('trend')"  class="books-next left-books" src="../../../../assets/images/prev.png"> 
+    </div>
+    
+    <div class="col-lg-10" >
+    
+    <carousel  class="usedbookslider" [showIndicators]=false>
+      <slide>
+          <div class="col-lg-12" style="padding:0;">
+              <div class="row">
+    
+                <div class="col-lg-3 cursorPointer" *ngFor="let usedBooklist of usedBooklist1">
+                    <div class="card" (click)="navigateTodetailPage(usedBooklist)">
+                            <img  class="card-img-top" src="../../../../assets/images/1.jpg" alt="first slide" style="display: block; width: 100%;">
+                        <div class="card-body">
+                         <p class="card-text">The Runaway Kite : An Adventure in Japan - Book<br>
+                             <span class="price">Rs. 200 {{usedBooklist.name}}</span>
+                         </p>
+    
+                        </div>
+                    </div>
+    
+              </div> </div>
+            </div>
+    
+    
+    
+      </slide>
+      <slide>
+          <div class="col-lg-12" style="padding:0;">
+              <div class="row">
+    
+                    <div class="col-lg-3 cursorPointer"  *ngFor="let usedBooklist of usedBooklist2">
+                            <div class="card" (click)="navigateTodetailPage(usedBooklist)">
+                                    <img  class="card-img-top" src="../../../../assets/images/3.jpg" alt="first slide" style="display: block; width: 100%;">
+                                <div class="card-body">
+                                 <p class="card-text">The Runaway Kite : An Adventure in Japan - Book<br>
+                                     <span class="price">Rs. 200 {{usedBooklist.name}}</span>
+                                 </p>
+            
+                                </div>
+                            </div>
+            
+                      </div>
+                      
+              </div>
+              
+              </div> 
+             </slide>
+      <slide>
+          <div class="col-lg-12" style="padding:0;">
+              <div class="row">
+    
+                    <div class="col-lg-3 cursorPointer" *ngFor="let usedBooklist of usedBooklist3">
+                            <div class="card" (click)="navigateTodetailPage(usedBooklist)">
+                                    <img  class="card-img-top" src="../../../../assets/images/2.jpg" alt="first slide" style="display: block; width: 100%;">
+                                <div class="card-body">
+                                 <p class="card-text">The Runaway Kite : An Adventure in Japan - Book<br>
+                                     <span class="price">Rs. 200 {{usedBooklist.name}}</span>
+                                 </p>
+            
+                                </div>
+                            </div>
+            
+                      </div>
+                      
+              </div>
+              
+              </div> 
+            
+            </slide>
+    </carousel>
+    </div>
+    <div class="col-lg-1 ">
+            <img (click)="curoselnext('trend')"  class="books-next right-books" src="../../../../assets/images/next.png"> 
+    
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="col-lg-12 ">
+        <div class="row">     
+          
+          <div class="col-lg-10 u-box">
+      
+                <h1 class="used-heading">Used Books</h1>
+                <p>Variety of Used Books Available.</p>
+          </div>
+      
+            <div class="viewAll col-lg-2 u-box ">
+              <a  (click)="navigateTolistingPage('used')">View All Used Books</a>
+            </div>
+      
+          </div>
+      
+      </div>
+</div>
+
+
+
+<div class="col-lg-12">
+    <div class="row">
+<div class="col-lg-1">
+    <img (click)="curoselprev('used')"  class="books-next left-books" src="../../../../assets/images/prev.png"> 
+</div>
+
+<div class="col-lg-10" >
+
+<carousel  class="usedbookslider" [showIndicators]=false>
+  <slide>
+      <div class="col-lg-12" style="padding:0;">
+          <div class="row">
+
+            <div class="col-lg-3 cursorPointer" *ngFor="let usedBooklist of usedBooklist1">
+                <div class="card" (click)="navigateTodetailPage(usedBooklist)">
+                        <img  class="card-img-top" src="../../../../assets/images/1.jpg" alt="first slide" style="display: block; width: 100%;">
+                    <div class="card-body">
+                     <p class="card-text">The Runaway Kite : An Adventure in Japan - Book<br>
+                         <span class="price">Rs. 200 {{usedBooklist.name}}</span>
+                     </p>
+
+                    </div>
+                </div>
+
+          </div> </div>
+        </div>
+
+
+
+  </slide>
+  <slide>
+      <div class="col-lg-12" style="padding:0;">
+          <div class="row">
+
+                <div class="col-lg-3 cursorPointer"  *ngFor="let usedBooklist of usedBooklist2">
+                        <div class="card" (click)="navigateTodetailPage(usedBooklist)">
+                                <img  class="card-img-top" src="../../../../assets/images/3.jpg" alt="first slide" style="display: block; width: 100%;">
+                            <div class="card-body">
+                             <p class="card-text">The Runaway Kite : An Adventure in Japan - Book<br>
+                                 <span class="price">Rs. 200 {{usedBooklist.name}}</span>
+                             </p>
+        
+                            </div>
+                        </div>
+        
+                  </div>
+                  
+          </div>
+          
+          </div> 
+         </slide>
+  <slide>
+      <div class="col-lg-12" style="padding:0;">
+          <div class="row">
+
+                <div class="col-lg-3 cursorPointer" *ngFor="let usedBooklist of usedBooklist3">
+                        <div class="card" (click)="navigateTodetailPage(usedBooklist)">
+                                <img  class="card-img-top" src="../../../../assets/images/2.jpg" alt="first slide" style="display: block; width: 100%;">
+                            <div class="card-body">
+                             <p class="card-text">The Runaway Kite : An Adventure in Japan - Book<br>
+                                 <span class="price">Rs. 200 {{usedBooklist.name}}</span>
+                             </p>
+        
+                            </div>
+                        </div>
+        
+                  </div>
+                  
+          </div>
+          
+          </div> 
+        
+        </slide>
+</carousel>
+</div>
+<div class="col-lg-1 ">
+        <img (click)="curoselnext('used')"  class="books-next right-books" src="../../../../assets/images/next.png"> 
+
+</div>
+</div>
+</div>
+
+<div class="container">
+    <div class="col-lg-12 ">
+        <div class="row">     
+          
+          <div class="col-lg-10 u-box">
+      
+                <h1 class="used-heading">New Books</h1>
+                <p>New Books on Very Affordable Price.</p>
+          </div>
+      
+            <div class="viewAll col-lg-2 u-box ">
+              <a  (click)="navigateTolistingPage('new')">View All New Books</a>
+            </div>
+      
+          </div>
+      
+      </div>
+</div>
+
+
+
+<div class="col-lg-12">
+    <div class="row">
+<div class="col-lg-1">
+    <img (click)="curoselprev('new')"  class="books-next left-books" src="../../../../assets/images/prev.png"> 
+</div>
+
+<div class="col-lg-10" >
+
+<carousel  class="usedbookslider" [showIndicators]=false>
+  <slide>
+      <div class="col-lg-12" style="padding:0;">
+          <div class="row">
+
+            <div class="col-lg-3 cursorPointer" *ngFor="let usedBooklist of usedBooklist1">
+                <div class="card" (click)="navigateTodetailPage(usedBooklist)">
+                        <img  class="card-img-top" src="../../../../assets/images/1.jpg" alt="first slide" style="display: block; width: 100%;">
+                    <div class="card-body">
+                     <p class="card-text">The Runaway Kite : An Adventure in Japan - Book<br>
+                         <span class="price">Rs. 200 {{usedBooklist.name}}</span>
+                     </p>
+
+                    </div>
+                </div>
+
+          </div> </div>
+        </div>
+
+
+
+  </slide>
+  <slide>
+      <div class="col-lg-12" style="padding:0;">
+          <div class="row">
+
+                <div class="col-lg-3 cursorPointer"  *ngFor="let usedBooklist of usedBooklist2">
+                        <div class="card" (click)="navigateTodetailPage(usedBooklist)">
+                                <img  class="card-img-top" src="../../../../assets/images/3.jpg" alt="first slide" style="display: block; width: 100%;">
+                            <div class="card-body">
+                             <p class="card-text">The Runaway Kite : An Adventure in Japan - Book<br>
+                                 <span class="price">Rs. 200 {{usedBooklist.name}}</span>
+                             </p>
+        
+                            </div>
+                        </div>
+        
+                  </div>
+                  
+          </div>
+          
+          </div> 
+         </slide>
+  <slide>
+      <div class="col-lg-12" style="padding:0;">
+          <div class="row">
+
+                <div class="col-lg-3 cursorPointer" *ngFor="let usedBooklist of usedBooklist3">
+                        <div class="card" (click)="navigateTodetailPage(usedBooklist)">
+                                <img  class="card-img-top" src="../../../../assets/images/2.jpg" alt="first slide" style="display: block; width: 100%;">
+                            <div class="card-body">
+                             <p class="card-text">The Runaway Kite : An Adventure in Japan - Book<br>
+                                 <span class="price">Rs. 200 {{usedBooklist.name}}</span>
+                             </p>
+        
+                            </div>
+                        </div>
+        
+                  </div>
+                  
+          </div>
+          
+          </div> 
+        
+        </slide>
+</carousel>
+</div>
+<div class="col-lg-1 ">
+        <img (click)="curoselnext('new')"  class="books-next right-books" src="../../../../assets/images/next.png"> 
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+

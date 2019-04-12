@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+.view{
+   border: 1px solid rgba(0,47,52,.2);
+   padding: 20px;
+   margin-bottom: 20px;
+  
+   
+}
+
+.detail-carousel slide{
+    max-height: 350px;
+}
+.detail-carousel slide img{
+    max-width: 100%;
+    height: auto;
+}
+.details-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.first-view{
+    margin-left: 40px;
+
+    
+}
+.second-view{
+    margin-left: 30px;
+}
+
+.font{
+    font-family: Poppins,Arial,Helvetica,sans-serif;
+}
+.main-price{
+    font-family: Poppins,Arial,Helvetica,sans-serif;
+    text-align: left;
+    font-weight: bold;
+    font-stretch: normal;
+    font-size: 30px;
+}
+.mapp{
+    height: 300px;
+}
+.detailsAbout h1{
+    font-weight: 400;
+font-size: 25px;
+color: #002f34;
+text-transform: uppercase;
+}
+.detailsAbout h2{
+    font-weight: 400;
+font-size: 15px;
+color: #002f34;
+text-transform: uppercase;
+margin-right: 20px;
+}
+.detailsAbout h3{
+    font-weight: 600;
+font-size: 14px;
+color: #002f34;
+text-transform: uppercase;
+margin-right: 20px;
+}
+
+.display-inline{
+    display: inline;
+}

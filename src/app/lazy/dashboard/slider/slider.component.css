@@ -1,0 +1,78 @@
+slide{
+    height:580px;
+    
+   
+}
+
+.search-form{
+    padding: 10px;
+    background:  rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.row{
+    margin: 0px;
+
+}
+.search-box{
+    position: relative;
+    z-index: 2;
+    margin: 150px 300px ;
+}
+.s-box{
+
+    padding: 2px;
+ 
+}
+.book-name input{
+    height: 100%;
+}
+.search-books-heading{
+    
+    
+    
+    font-size: 40px;
+  
+}
+.search-book-content{
+    color: white;
+    margin:auto;
+    
+}
+
+.search-book-content p{
+
+    font-style: italic;
+    font-size: 20px;
+}
+.s-box button{
+    height: 38px;
+    padding-left: 8px;
+    padding-top: 5px;
+    font-size: 15px;
+}
+.s-box img{
+    margin-right: 5px;
+}
+.search-btn{
+    padding-top: 0!important;
+    font-size: 25px!important;
+    height: 40px;
+}
+.search-btn img{
+    margin-bottom: 5px;
+}
+.filter-btn{
+    background-color: #2280bd;
+    border-color: #2280bd;
+}
+.search-book-radio,.content-radio{
+    margin-right: 10px;
+}
+.formmodal .row{
+    margin-bottom: 20px;
+}

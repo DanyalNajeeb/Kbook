@@ -3,17 +3,7 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <div class="app-container">
-    <h1>Angular Universal Demo utilizing Angular & Angular CLI</h1>
-    <nav class="nav-links">
-      <a routerLink="/">Home</a>
-      <a routerLink="/lazy">Lazy-loaded Route</a>
-      <a routerLink="/lazy/nested">Nested Routes work too</a>
-    </nav>
-    <div class="router-container">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
+  <router-outlet></router-outlet>
   `,
   styles: [`
     :host {
